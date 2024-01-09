@@ -1,6 +1,6 @@
 .banner {
   max-width: 1300px;
-  margin: 4% auto;
+  margin: auto;
   height: 90vh;
   background: linear-gradient(90deg, #24595ae7 0%, rgba(72, 17, 182, 0) 50%),
     url("../image/pexels-pixabay-302083.jpg") fixed;
@@ -11,4 +11,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+li{
+  list-style: none;
+}
+.hover-zoom {
+  transition: transform 0.3s;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.1);
 }

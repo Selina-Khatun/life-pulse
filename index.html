@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Life pulse</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./image/icons8-family-64.png" type="image/x-icon">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -25,7 +26,8 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand fw-bolder text-danger" href="#">Life pulse</a>
+          <img class="rounded-circle " src="./image/icons8-family-64.png" alt="">
+          <a class="navbar-brand fw-bold position-absolute text-danger " href="#">Life pulse</a>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0">
               <li class="nav-item ms-3">
@@ -54,17 +56,54 @@
         <div class="d-flex justify-content-center align-items-center h-100">
           <div class="text-white">
             <h1 class="mb-3">Website Age Checker</h1>
-            <div
-              class="d-flex align-items-center justify-content-center">
+            <div class="d-flex align-items-center justify-content-center">
               <input
                 class="rounded border-white py-2 px-5"
                 type="search"
                 name=""
-                id=""
+                id="ageInput"
                 placeholder="Enter your age" />
-              <button class="btn btn-outline-light rounded-end  btn p-2" href="#!" role="button">
+              <button
+              id="btnSearch"
+                type="button"
+                class="btn btn-outline-light rounded-end btn p-2"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
                 Search
               </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade text-dark"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-danger" id="exampleModalLabel">
+                       Welcome to the website
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">...</div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+                        Close
+                      </button>
+                  
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -72,8 +111,135 @@
       <!-- Hero -->
     </header>
 
-    <main></main>
-    <footer></footer>
+    <main class="container-xl">
+      <h1 class="text-danger fw-bolder display-3 text-center mb-5">
+        our services
+      </h1>
+      <section class=" row justify-content-center align-items-center row-cols-1 row-cols-md-2 row-cols-lg-3 gap-3">
+        <div class="card col" style="width: 21rem">
+          <img
+            src="./image/johnny-cohen-OxOxqLAWvE0-unsplash.jpg"
+            class="card-img-top mt-2 hover-zoom"
+            alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Age Calculator</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-outline-danger">Explore more</a>
+          </div>
+        </div>
+        <div class="card col" style="width: 21rem" >
+          <img
+            src="./image/liv-bruce-odIhQypCuUk-unsplash.jpg"
+            class="card-img-top mt-2 hover-zoom"
+            alt="..." />
+          <div class="card-body">
+            <h5 class="card-title"> system of age calculation</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-outline-danger">Explore more</a>
+          </div>
+        </div>
+        <div class="card col" style="width: 21rem" >
+          <img
+            src="./image/pexels-pixabay-302083.jpg"
+            class="card-img-top mt-2 hover-zoom "
+            alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Age Checker</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-outline-danger">Explore more</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="container-xxl mt-5">
+      <div class="card mb-3 bg-dark text-white">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-8 col-md-6 col-sm-12">
+            <div class="d-flex flex-column p-lg-5 p-md-5 p-sm-5">
+              <ul class="d-flex gap-3">
+                <li>Download Now</li>
+                <li class="ms-lg-3">License</li>
+              </ul>
+              <ul class="d-flex gap-3 mt-0">
+                <li class="">
+                  <a class="text-white" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="">
+                  <a class="text-white" href="#">Our services</a>
+                </li>
+                <li class="">
+                  <a class="text-white" href="#">About</a>
+                </li>
+                <li class="">
+                  <a class="text-white" href="#">Blog</a>
+                </li>
+              </ul>
+              <div>
+                <small class="ms-4">© 2020 bike. All rights reserved</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center">
+              <p class="">Get the App</p>
+
+              <div class="w-50">
+                <img class="w-75" src="./image/android.png" alt="" />
+              </div>
+              <div class="w-50">
+                <img class="w-75" src="./image/ios.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("btnSearch").addEventListener("click", function () {
+          const ageInput = document.getElementById("ageInput");
+          const ageValueNumber = Number(ageInput.value);
+          const modalBody = document.querySelector(".modal-body");
+  
+          // Clear previous content
+
+          modalBody.innerHTML = '';
+  
+          if (ageValueNumber === 0) {
+            
+              modalBody.innerHTML = "<p class='text-danger'>Invalid Age. Please enter a valid age.</p>";
+          } else {
+              if (ageValueNumber >= 18) {
+                  const adultMessage = document.createElement('h1');
+                  adultMessage.textContent = "You are an Adult";
+                  adultMessage.classList.add('text-success');
+                  modalBody.appendChild(adultMessage);
+              } else {
+                  const childMessage = document.createElement('h1');
+                  childMessage.textContent = "You are a Child";
+                  childMessage.classList.add('text-info');
+                  modalBody.appendChild(childMessage);
+              }
+          }
+  
+          // Clear the input field
+          ageInput.value = "";
+      });
+  </script>
+  
+  
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
